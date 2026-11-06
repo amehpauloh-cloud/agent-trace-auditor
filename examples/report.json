@@ -1,0 +1,17 @@
+{
+  "trace_id": "synthetic-demo-001",
+  "checks_passed": false,
+  "finding_count": 2,
+  "findings": [
+    {
+      "code": "MISSING_ARGUMENT",
+      "step": "c1",
+      "detail": "Required argument 'query' missing"
+    },
+    {
+      "code": "INVALID_EVIDENCE",
+      "step": "f1",
+      "detail": "'c1' has no preceding successful result"
+    }
+  ]
+}

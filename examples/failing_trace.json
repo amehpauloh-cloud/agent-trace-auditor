@@ -1,0 +1,12 @@
+{
+  "trace_id": "synthetic-demo-001",
+  "policy": {
+    "allowed_tools": ["lookup"],
+    "required_arguments": {"lookup": ["query"]}
+  },
+  "steps": [
+    {"id": "c1", "type": "tool_call", "tool": "lookup", "arguments": {}},
+    {"id": "r1", "type": "tool_result", "call_id": "c1", "status": "error"},
+    {"id": "f1", "type": "final", "claims_completion": true, "evidence": ["c1"]}
+  ]
+}
